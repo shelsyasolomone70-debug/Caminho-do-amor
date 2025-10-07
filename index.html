@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Caminho do Amor 💌</title>
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px; background-color: #fff0f5;">
+    <h1>Oi, meu amor 😘</h1>
+    <p>Preparei algo especial pra ti... Decidi me irritar contigo 💕</p>
+    <p>Primeira pergunta: Qual é a musica ultima musica que eu enviei-te?</p>
+
+    <input type="text" id="resposta" placeholder="Digite aqui...">
+    <button onclick="verificar()">Responder</button>
+    <p id="mensagem" style="color: red; font-weight: bold;"></p>
+
+    <script>
+        function verificar() {
+            const resposta = document.getElementById("resposta").value.toLowerCase();
+            if (resposta.includes("bon jovi bed of rose")) {
+                window.location.href = "pista2.html";
+            } else {
+                document.getElementById("mensagem").innerText = "Eu sabia! Tenta de novo sff 😅";
+            }
+        }
+    </script>
+</body>
+</html>
